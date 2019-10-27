@@ -15,7 +15,7 @@ GPIO3には、Wake From Halt機能が実装されておりGPIO3をLOWにする�
     - GPIO4: スイッチ内臓のLED用(アクティブHIGH)
 
 - サービスファイル詳細   
-    powerbutton.py
+    powerbutton.service
     ~~~
     [Unit]
     Description=Power Button Daemon

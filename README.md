@@ -1,5 +1,9 @@
 # Raspberry Pi に電源ボタンを追加する
 
+## 以下のプログラムからシャットうダウンする方法以外に/boot/config.txtのパラメータを変更して実装する方法在り
+[ラズベリーパイ: シャットダウンボタンを1行で有効化](https://qyu555.blogspot.com/2019/11/shutdown-raspbian.html)   
+[Raspberry Pi Documentation-Configurations](https://www.raspberrypi.org/documentation/computers/configuration.html)
+
 GPIO3には、Wake From Halt機能が実装されておりGPIO3をLOWにするだけでスリープ状態からOSを復帰できる。   
 また、稼動状態からシャットダウンする機能は実装されていないので、python+deamonを使用して同じGPIO3がLOWになった時にシャットダウンするように実装した。
 - 参考   
